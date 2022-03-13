@@ -14,11 +14,11 @@ npm i kurdish-profanity
 Usage:
 
 ```javascript
-const words = require('kurdish-profanity');
+const {dataset, isProfane} = require('kurdish-profanity');
 
 const arg = 'وشەی نابەجێ';
 
-if (words.includes(arg.toLowerCase())) {
+if (dataset.includes(arg.toLowerCase())) {
   console.warn('Watch your mouth!');
 } else {
   console.warn('Thank you for using safe words');
