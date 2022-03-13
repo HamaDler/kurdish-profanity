@@ -18,7 +18,7 @@ const {dataset, isProfane} = require('kurdish-profanity');
 
 const arg = 'وشەی نابەجێ';
 
-if (dataset.includes(arg.toLowerCase())) {
+if (isProfane(arg)) {
   console.warn('Watch your mouth!');
 } else {
   console.warn('Thank you for using safe words');
