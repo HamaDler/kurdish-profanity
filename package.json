@@ -1,0 +1,24 @@
+{
+  "name": "kurdish-profanity",
+  "version": "1.0.0",
+  "description": "Profane words in kurdish.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HamaDler/kurdish-profanity.git"
+  },
+  "keywords": [
+    "kurdish",
+    "profane",
+    "words"
+  ],
+  "author": "Hama Dler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HamaDler/kurdish-profanity/issues"
+  },
+  "homepage": "https://github.com/HamaDler/kurdish-profanity#readme"
+}

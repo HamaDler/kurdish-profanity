@@ -1,20 +1,21 @@
-var fs = require('fs');
-
-/* READ TEXT FILE */
-var dataset = fs
-  .readFileSync('./data/negative_wordlist.txt')
+const fs = require('fs');
+const path = require('path');
+const wordlist = fs
+  .readFileSync(path.resolve(__dirname, './dataset.txt'))
   .toString()
   .split('\n');
 
-function isProfane(input) {
-  if (dataset.includes(input.toLowerCase())) {
+const getWordlist = () => {
+  return wordlist;
+};
+
+// Function that checks if a word is profane
+const isProfane = (input) => {
+  if (getWordlist().includes(input.toLowerCase())) {
     return true;
   } else {
     return false;
   }
-}
-
-module.exports = {
-  isProfane,
-  dataset,
 };
+
+module.exports = { getWordlist, isProfane };
